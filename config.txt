@@ -1,0 +1,14 @@
+folder_path = 'data/'                # Location of input files
+output_file = 'final_report.xlsx'   # Output file name
+email_enabled = False               # Set to True to send report via email
+db_enabled = True                   # Set to True to push data to a DB
+
+db_type = 'sqlite'  # Options: 'sqlite', 'postgresql', 'mysql'
+db_name = 'analytics_db.db'         # For SQLite
+
+
+db_config = {
+    'sqlite': 'sqlite:///analytics_db.db',
+    'postgresql': 'postgresql://user:password@localhost:5432/dbname',
+    'mysql': 'mysql+pymysql://user:password@localhost:3306/dbname'
+}
